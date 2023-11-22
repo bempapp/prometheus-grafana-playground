@@ -6,7 +6,7 @@ Playground para experimentação local de prometheus e grafana.
 
 Para utilizar o playground é necessário ter o Kubernetes, Kubectl e o Helm instalado.
 
-Para instalação do kubernetes localmente, sugiro o uso de (docker-desktop)[https://docs.docker.com/desktop/kubernetes/] ou (orbstack)[https://docs.orbstack.dev/kubernetes/]
+Para instalação do kubernetes localmente, sugiro o uso de [docker-desktop](https://docs.docker.com/desktop/kubernetes/) ou [orbstack](https://docs.orbstack.dev/kubernetes/).
 
 ## Instalando o Playground
 
