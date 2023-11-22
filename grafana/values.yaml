@@ -1,0 +1,37 @@
+adminUser: grafana
+adminPassword: grafana
+
+datasources:
+ datasources.yaml:
+   apiVersion: 1
+   datasources:
+   - name: Prometheus
+     type: prometheus
+     url: http://prometheus-server
+     access: proxy
+     isDefault: true
+
+dashboardProviders:
+ dashboardproviders.yaml:
+   apiVersion: 1
+   providers:
+   - name: 'default'
+     orgId: 1
+     folder: ''
+     type: file
+     disableDeletion: false
+     editable: true
+     options:
+       path: /var/lib/grafana/dashboards/default
+
+dashboards:
+  default:
+    kube-state-metrics-v2:
+      gnetId: 13332
+      revision: 1
+      datasource: Prometheus
+
+    container-resources:
+      gnetId: 14678
+      revision: 1
+      datasource: Prometheus
